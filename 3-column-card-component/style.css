@@ -15,8 +15,8 @@ body{
     flex-direction: column; 
     justify-content: center;
     min-height: 100vh;
-    min-width: 100vw;
     font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--background);
 }
 
 main{
@@ -40,17 +40,17 @@ section{
 
 section#sedans{
     background-color: var(--sedan);
-    width: 20.46rem;
+    width: 20.43rem;
 }
 
 section#suvs{
     background-color: var(--suv);
-    width: 20.4rem;
+    width: 20.43rem;
 }
 
 section#luxury{
     background-color: var(--luxury);
-    width: 20.47rem;
+    width: 20.43rem;
 }
 
 
@@ -99,7 +99,7 @@ button#button-luxury:hover{
 
 
  /*headers paragraphs*/
-h1{
+h1.title{
    color: var(--background);
    font-family: 'Big Shoulders Display', cursive;
    font-size: 2.66rem;
@@ -125,23 +125,15 @@ footer a {
 
 
  /*Mobile*/
-@media (max-width: 375px){
+ @media only screen and (max-width: 768px){
 main {
-    display: flex;
     flex-direction: column;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 8px;
 }
 
 section{
     height: auto;
-    width: 21.7rem !important;
-    text-align: left;
-}
+    width: 23.7rem;
 
-button{
-    margin-top: 2rem;
 }
 
 }
