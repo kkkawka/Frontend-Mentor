@@ -102,8 +102,7 @@ p{
     margin: 1.77rem 0 0 0;
 }
 
-footer { 
-
+footer{ 
     font-size: 0.73rem; 
     text-align: center; 
     margin-top: 1rem;
@@ -119,7 +118,7 @@ body{
     padding-block: 6rem;
 }
 
-main {
+main{
     flex-direction: column;
     width: 22rem;
     height: auto;
@@ -128,7 +127,7 @@ main {
 .sedans,
 .suvs,
 .luxury{
-    width: auto;;
+    width: auto;
     height: 29.6rem;
 }
 
