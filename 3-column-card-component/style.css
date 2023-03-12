@@ -57,40 +57,36 @@ main{
     border-radius: 3.3rem;
     padding: 0.84rem 1.99rem;
     border: 0.133rem solid var(--background);
+    background-color: var(--background);
+    cursor: pointer;
     margin-top: 5.5rem;
 }
 
 .sedans .button{
     color: var(--sedan);
-
 }
 
 .sedans .button:hover{
     color: var(--background);
     background-color: var(--sedan);
-    cursor: pointer;
 }
 
 .suvs .button{
     color: var(--suv);
-    background-color:var(--background);
 }
 
 .suvs .button:hover{
     color: var(--background);
     background-color: var(--suv);
-    cursor: pointer;
 }
 
 .luxury .button{
     color: var(--luxury);
-    background-color: var(--background);
 }
 
 .luxury .button:hover{
     color: var(--background);
     background-color: var(--luxury);
-    cursor: pointer;
 }
 
 h1.title{
