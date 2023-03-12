@@ -7,55 +7,51 @@
     --luxury: hsl(179, 100%, 13%);
 }
 
- /*test test test*/
-
 body{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    justify-content: center;
-    min-height: 100vh;
-    font-family: 'Lexend Deca', sans-serif;
     background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-main{
+main{ 
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 61.32rem;
+    height: 33.3rem;
+    margin-inline: auto;
     overflow: hidden;
     border-radius: 0.53rem;
-    justify-content: center;
-    align-items: center;
+    background-color: aqua;
 }
 
-
- /* sections*/
-section{
+.sedans,
+.suvs,
+.luxury{
     height: 33.3rem;
+    width: 20.44rem;
     text-align: left;
     box-sizing: border-box;
     padding: 3.2rem;
 }
 
-section#sedans{
+.sedans{
     background-color: var(--sedan);
-    width: 20.43rem;
 }
 
-section#suvs{
+.suvs{
     background-color: var(--suv);
-    width: 20.43rem;
 }
 
-section#luxury{
+.luxury{
     background-color: var(--luxury);
-    width: 20.43rem;
 }
 
-
-/*buttons*/
-button{
+.button{
     font-size: 1rem;
     font-family: 'Lexend Deca', sans-serif;
     border-radius: 3.3rem;
@@ -64,47 +60,45 @@ button{
     margin-top: 5.5rem;
 }
 
-button#button-sedan{
+.sedans .button{
     color: var(--sedan);
-    background-color: var(--background);
+
 }
 
-button#button-sedan:hover{
+.sedans .button:hover{
     color: var(--background);
     background-color: var(--sedan);
     cursor: pointer;
 }
 
-button#button-suvs{
+.suvs .button{
     color: var(--suv);
     background-color:var(--background);
 }
 
-button#button-suvs:hover{
+.suvs .button:hover{
     color: var(--background);
     background-color: var(--suv);
     cursor: pointer;
 }
 
-button#button-luxury{
+.luxury .button{
     color: var(--luxury);
     background-color: var(--background);
 }
 
-button#button-luxury:hover{
+.luxury .button:hover{
     color: var(--background);
     background-color: var(--luxury);
     cursor: pointer;
 }
 
-
- /*headers paragraphs*/
 h1.title{
    color: var(--background);
    font-family: 'Big Shoulders Display', cursive;
    font-size: 2.66rem;
    text-transform: uppercase;
-   margin: 2.02rem 0 0 0;
+   margin: 2.05rem 0 0 0;
 }
 
 p{
@@ -114,6 +108,7 @@ p{
 }
 
 footer { 
+
     font-size: 0.73rem; 
     text-align: center; 
     margin-top: 1rem;
@@ -123,20 +118,28 @@ footer a {
     color: hsl(228, 45%, 44%); 
 }
 
-
  /*Mobile*/
- @media only screen and (max-width: 768px){
+@media (max-width: 700px){
+body{
+    padding-block: 4rem;
+}
+
 main {
     flex-direction: column;
-}
-
-section{
+    width: 22rem;
     height: auto;
-    width: 23.7rem;
+}
 
+.sedans,
+.suvs,
+.luxury{
+    width: auto;;
+    height: 29.6rem;
+}
+
+.button{
+    margin-top: 1.9rem;
 }
 
 }
-
-
 
