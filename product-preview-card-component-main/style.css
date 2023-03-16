@@ -1,0 +1,88 @@
+:root{
+    font-size: 15px;
+    --add:hsl(158, 36%, 37%); /*Dark cyan*/
+    --backgroung: hsl(30, 38%, 92%); /*cream*/
+    --add2:hsl(212, 21%, 14%); /*Very dark blue*/
+    --description: hsl(228, 12%, 48%);/*Dark grayish blue*/
+    --bg2: hsl(0, 0%, 100%); /*White*/
+    
+
+    /*font-family: 'Fraunces', serif;*/
+    /*font-family: 'Montserrat', serif;*/
+
+}
+body {
+    background-color: var(--backgroung);
+}
+
+main {
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+
+.name {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.87rem;
+    letter-spacing: 0.2rem;
+    color: var(--description);
+}
+
+h2.title {
+    font-family: 'fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p.descr {
+    font-family: 'Montserrat', serif;;
+    color: var(--description);
+    font-size: 0.93rem;
+}
+.price {
+    display: flex;
+}
+
+.actual_price {
+    color: var(--add);
+}
+
+.price_before {
+    color: var(--description);
+}
+
+@media (max-width: 700px) {
+    
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main{
+    width: 95%;
+    height: auto;
+    background-color: var(--bg2);
+    margin-inline: auto;
+    margin-block: 1.4rem;
+}
+
+.name,
+.title,
+.descr{
+    margin-inline: 1.3rem;   
+}
+
+.name {
+    margin-top: 1.4rem;
+}
+
+picture .img {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+}
+
+}
