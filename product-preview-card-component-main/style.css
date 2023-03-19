@@ -12,21 +12,27 @@
 
 }
 body {
+    min-height: 100vh;
     background-color: var(--backgroung);
 }
 
 main {
     border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
 }
 
 
-.name {
+p.name {
     font-family: 'Montserrat', serif;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 0.87rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2rem;
+    margin-block: 1.6rem 0rem;
+    margin-inline: 1.5rem; 
     color: var(--description);
 }
 
@@ -34,23 +40,46 @@ h2.title {
     font-family: 'fraunces', serif;
     font-weight: 700;
     font-size: 2rem;
+    margin-inline: 1.6rem; 
+    margin-block: 0.5rem 0;
 }
 
 p.descr {
-    font-family: 'Montserrat', serif;;
-    color: var(--description);
+    font-family: 'Montserrat', serif;
     font-size: 0.93rem;
+    margin-inline: 1.6rem;
+    line-height: 1.6rem;
+    margin-block: 0.7rem 0;
+    color: var(--description);
 }
 .price {
+    margin-inline: 1.6rem;
+    margin-block: 0;
     display: flex;
+    justify-content: flex-start;
 }
 
 .actual_price {
+    font-size: 2rem;
+    font-family: 'fraunces', serif;
     color: var(--add);
+    margin: 0;
 }
 
 .price_before {
+    font-family: 'montserrat', serif;
+    text-decoration: line-through;
+    font-size: 0.8rem;
     color: var(--description);
+}
+
+button.btn {
+    background-color: var(--add);
+    border: none;
+    height: 3rem;
+    width: 19.7rem;
+    border-radius: 0.5rem;
+    margin-block: 2rem;
 }
 
 @media (max-width: 700px) {
@@ -61,22 +90,11 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-main{
+main {
     width: 95%;
     height: auto;
     background-color: var(--bg2);
     margin-inline: auto;
-    margin-block: 1.4rem;
-}
-
-.name,
-.title,
-.descr{
-    margin-inline: 1.3rem;   
-}
-
-.name {
-    margin-top: 1.4rem;
 }
 
 picture .img {
