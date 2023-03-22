@@ -1,11 +1,10 @@
 :root{
     font-size: 15px;
-    --add:hsl(158, 36%, 37%); /*Dark cyan*/
+    --add:hsl(158, 36%, 37%); /*button - Dark cyan*/
     --backgroung: hsl(30, 38%, 92%); /*cream*/
-    --add2:hsl(212, 21%, 14%); /*Very dark blue*/
+    --add2:hsl(156, 42%, 18%); /*button hover - Very dark blue*/
     --description: hsl(228, 12%, 48%);/*Dark grayish blue*/
-    --bg2: hsl(0, 0%, 100%); /*White*/
-    
+    --bg2: hsl(0, 0%, 100%); /*backgroung - White*/
 
     /*font-family: 'Fraunces', serif;*/
     /*font-family: 'Montserrat', serif;*/
@@ -14,52 +13,68 @@
 body {
     min-height: 100vh;
     background-color: var(--backgroung);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-main {
-    border-radius: 0.6rem;
+.item {
     display: flex;
-    flex-direction: column;
+    background-color: var(--bg2);
+    height: 30rem;
+    width: 40rem;
+    border-radius: 0.6rem;
     overflow: hidden;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
 
-p.name {
+picture .img {
+    width: 20rem;
+}
+
+h1.name {
     font-family: 'Montserrat', serif;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 0.8rem;
-    letter-spacing: 0.2rem;
-    margin-block: 1.6rem 0rem;
-    margin-inline: 1.5rem 0; 
+    letter-spacing: 0.3rem;
+    margin-block: 2.1rem 0rem;
+    margin-left: 2rem; 
     color: var(--description);
 }
 
 h2.title {
     font-family: 'fraunces', serif;
     font-weight: 700;
-    font-size: 2rem;
-    margin-inline: 1.6rem; 
-    margin-block: 0.5rem 0;
+    font-size: 2.1rem;
+    margin-inline: 2rem; 
+    margin-block: 1.2rem;
+    line-height: 2.2rem;
 }
 
 p.descr {
     font-family: 'Montserrat', serif;
     font-size: 0.93rem;
-    margin-inline: 1.6rem;
-    line-height: 1.6rem;
-    margin-block: 0.7rem 0;
+    margin-inline: 2rem;
+    margin-block: 0.4rem 0;
+    line-height: 1.55rem;
     color: var(--description);
 }
 .price {
-    margin-inline: 2rem;
-    margin-block: 0;
+    margin-inline: 2.15rem;
+    margin-top: 1.7rem;
     display: flex;
     justify-content: flex-start;
 }
 
 .actual_price {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-family: 'fraunces', serif;
     color: var(--add);
     margin: 0;
@@ -68,43 +83,90 @@ p.descr {
 .price_before {
     font-family: 'montserrat', serif;
     text-decoration: line-through;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--description);
-    margin-left: 1.6rem;
+    margin-left: 1.3rem;
 }
 
 button.btn {
     background-color: var(--add);
-    color: white;
+    color: var(--bg2);
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    height: 3rem;
-    width: auto;
-    margin-inline: 1.5rem;
+    height: 3.2rem;
+    width: 15.8rem;
+    margin-inline: 2.1rem;
     border-radius: 0.5rem;
-    margin-block: 2rem;
+    margin-block: 1.48rem;
     font-family: 'montserrat', serif;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
+button.btn:hover {
+    background-color:var(--add2);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn img {
+    margin-right: 0.8rem;
+}
+
 @media (max-width: 700px) {
     
 body {
-    display: flex;
     flex-direction: column;
 }
-main {
+
+.item {
+    flex-direction: column;
+    min-height: 40.73rem;
     width: 95.5%;
     height: auto;
-    background-color: var(--bg2);
+    margin-block: 1.5rem;
+}
+
+main {
+    width: auto;
+}
+
+
+h1.name {
+    margin-block: 1.35rem 0rem;
+    margin-left: 1.6rem; 
+}
+
+h2.title {
+    margin-block: 0.9rem 0;
+    margin-inline: 1.6rem;
+}
+
+p.descr {
+    margin-inline: 1.57rem 1.7rem;
+    margin-block: 1rem 0;
+}
+
+.price {
+    margin-block: 1.3rem 0;
+    margin-inline: 1.55rem;
+}
+
+button.btn {
+    margin-block: 0.7rem 1rem;
+    width: 19.8rem;
     margin-inline: auto;
 }
 
 picture .img {
     width: 100%;
+}
+
+button .btn {
+    max-width: 19.6rem;
+    margin-inline: 1.5rem;
 }
 
 }
