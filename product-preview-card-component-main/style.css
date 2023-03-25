@@ -34,7 +34,7 @@ main {
     width: 20rem;
 }
 
-.img {
+#media .img {
     width: 20rem;
 }
 
@@ -141,7 +141,7 @@ main {
     width: auto;
 }
 
-.img {
+#media .img {
     width: 100%;
 }
 
