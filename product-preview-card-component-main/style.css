@@ -19,7 +19,7 @@ body {
     flex-direction: column;
 }
 
-.item {
+.container {
     display: flex;
     background-color: var(--bodybg);
     height: 30rem;
@@ -34,11 +34,11 @@ main {
     width: 20rem;
 }
 
-picture .img {
+.img {
     width: 20rem;
 }
 
-h1.name {
+.name {
     font-family: 'Montserrat', serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ h1.name {
     color: var(--description);
 }
 
-h2.title {
+.title {
     font-family: 'fraunces', serif;
     font-weight: 700;
     font-size: 2.1rem;
@@ -58,7 +58,7 @@ h2.title {
     line-height: 2.2rem;
 }
 
-p.description {
+.description {
     font-family: 'Montserrat', serif;
     font-size: 0.93rem;
     margin-inline: 2rem;
@@ -82,13 +82,14 @@ p.description {
 
 .price_before {
     font-family: 'montserrat', serif;
+    font-weight: 500;
     text-decoration: line-through;
     font-size: 0.9rem;
     color: var(--description);
     margin-left: 1.3rem;
 }
 
-button.btn {
+.btn {
     background-color: var(--add);
     color: var(--bodybg);
     display: flex;
@@ -97,7 +98,7 @@ button.btn {
     border: none;
     height: 3.2rem;
     width: 15.8rem;
-    margin-inline: 2.1rem;
+    margin-inline: auto;
     border-radius: 0.5rem;
     margin-block: 1.4rem;
     font-family: 'montserrat', serif;
@@ -105,7 +106,7 @@ button.btn {
     font-size: 0.9rem;
 }
 
-button.btn:hover {
+.btn:hover {
     background-color:var(--add2);
     cursor: pointer;
     transition: 0.25s;
@@ -129,33 +130,32 @@ body {
     flex-direction: column;
 }
 
-.item {
+.container {
     flex-direction: column;
     min-height: 40.73rem;
     width: 91.3%;
     height: auto;
-    margin-block: 1.5rem;
 }
 
 main {
     width: auto;
 }
 
-picture .img {
+.img {
     width: 100%;
 }
 
-h1.name {
+.name {
     margin-block: 1.35rem 0rem;
     margin-inline: 1.56rem; 
 }
 
-h2.title {
+.title {
     margin-block: 0.9rem 0;
     margin-inline: 1.6rem;
 }
 
-p.description {
+.description {
     margin-inline: 1.57rem 1.7rem;
     margin-block: 1rem 0;
 }
@@ -164,9 +164,8 @@ p.description {
     margin-block: 1.3rem 0;
     margin-inline: 1.55rem;
 }
-
-button.btn {
-    margin-block: 0.7rem 1rem;
+.btn {
+    margin-block: 1rem;
     width: 19.6rem;
     margin-inline: auto;
 }
