@@ -19,7 +19,7 @@ body {
     flex-direction: column;
 }
 
-.container {
+main {
     display: flex;
     background-color: var(--bodybg);
     height: 30rem;
@@ -28,13 +28,13 @@ body {
     overflow: hidden;
 }
 
-main {
+.product {
     display: flex;
     flex-direction: column;
     width: 20rem;
 }
 
-#media .img {
+.img {
     width: 20rem;
 }
 
@@ -116,11 +116,11 @@ main {
     margin-right: 0.8rem;
 }
 
-.attribution { 
+#attribution { 
     font-size: 0.8rem;
     margin-top: 1em;
 }
-.attribution a { 
+#attribution a { 
     color: hsl(228, 45%, 44%);
 }
 
@@ -130,18 +130,18 @@ body {
     flex-direction: column;
 }
 
-.container {
+main {
     flex-direction: column;
     min-height: 40.73rem;
     width: 91.3%;
     height: auto;
 }
 
-main {
+.product {
     width: auto;
 }
 
-#media .img {
+.img {
     width: 100%;
 }
 
