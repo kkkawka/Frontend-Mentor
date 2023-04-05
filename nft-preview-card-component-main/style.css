@@ -1,16 +1,22 @@
 :root{
-    --main-background: hsl(217,54%,11%); /**/
-    --card-background: hsl(216, 50%, 16%); /**/
-    --borderAvatar: hsla(215, 52%, 70%, 0.122); /**/
-    --white: hsl(0, 0%, 100%); /**/
+    --main-background: hsl(217,54%,11%); 
+    --component-background: hsl(216, 50%, 16%); 
+    --borderline: hsla(215, 52%, 70%, 0.122);
+    --white: hsl(0, 0%, 100%); 
 
-    --paragraph: hsl(215, 51%, 70%); /**/
-    --eht: hsl(178, 100%, 50%); /*hover*/
-    --footer: hsl(228, 45%, 44%); /**/
+    --paragraph: hsl(215, 51%, 70%);
+    --hover-color: hsl(178, 100%, 50%); 
+    --footer: hsl(228, 45%, 44%); 
     font-size: 15px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit', sans-serif; /* Weights: 300, 400, 600 */
 }
-
+a:visited,:active,:link {
+    text-decoration: none;
+    color: rgb(252, 251, 251);
+}
+a:hover {
+    color: var(--hover-color);
+}
 body {
     min-height: 100vh;
     display: flex;
@@ -19,59 +25,55 @@ body {
     flex-direction: column;
     background-color: var(--main-background);
     margin: 0;
+    color: white;
 }
 
 main {
-    background-color: var(--card-background);
+    background-color: var(--component-background);
     width: 23.3rem;
     height: 39.8rem;
     border-radius: 1rem;
     box-sizing: border-box;
     padding: 1.6rem;
-
 }
 
-.img {
+.NFT-img {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
 }
 
-header h2 {
-    margin: 1.4rem 0 0 0;
-    color: var(--white);
-    font-weight: 600;
+.title {
+    font-size: 1.5rem;
+    margin-block: 1.35rem 0;
 }
 
-header h2 :active,
-:visited,
-:link{
-    color: var(--white);
-    text-decoration: none;
-}
-
-.dscr {
-    color: var(--paragraph);
-    font-size: 1.2rem;
+.descr {
+    font-size: 1.3rem;
     font-weight: 300;
-    margin: 1.05rem 0 0 0;
-    line-height: 1.7rem;
+    color: var(--paragraph);
+    margin-block: 1.1rem 0;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-block: 0.25rem 0.5rem;
+    border-bottom: 1px solid;
+    border-color: var(--borderline);
 }
 
 .price {
-    color: var(--eht);
-    font-weight: 400;
     font-size: 1.1rem;
-    margin-top: 0.2rem;
+    font-weight: 400;
+    margin-block: 1.65rem;
+    color: var(--hover-color);
 }
 
-.price :before {
+.time-left {
+    background-color: red;
+}
+
+
+/* .price :before {
     content: "";
     background: url("images/icon-ethereum.svg") no-repeat;
     width: 1rem;
@@ -80,54 +82,8 @@ header h2 :active,
     margin-top: 0.1rem;
     float: left;
     display: block;
-}
+} */
 
-.time-left {
-    color: var(--paragraph);
-    font-size: 1.1rem;
-}
-
-.time-left :before {
-    content: "";
-    background: url("images/icon-clock.svg") no-repeat;
-    width: 1rem;
-    height: 1.1rem;
-    margin: 0.2rem 0.6rem 0 0 ;
-    float: left;
-    display: block;
-}
-
-.avatar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.09rem;
-    border-top: 1px solid ;
-    border-color: var(--borderAvatar);
-}
-
-.avatar p {
-    margin-top: 1.2rem;
-}
-
-.avatar img {
-    vertical-align: middle;
-    height: 2.1rem;
-    border: 1px solid;
-    border-color: var(--white);
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-
-.avatar {
-    color: var(--paragraph);
-}
-
-
-
-a:hover {
-    color: var(--eht);
-}
 
 /*footer*/
 .attribution { 
