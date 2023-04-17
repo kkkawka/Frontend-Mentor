@@ -1,16 +1,16 @@
 :root{
-    /* color main */
+    /* main color */
     --main-background: hsl(217,54%,11%); 
     --component-background: hsl(216, 50%, 16%); 
+
     --borderline: hsla(215, 52%, 70%, 0.122);
     --white: hsl(0, 0%, 100%); 
-    /* color other */
     --paragraph: hsl(215, 51%, 70%);
     --hover-color: hsl(178, 100%, 50%); 
     --hover-img: hsla(178, 100%, 50%, 0.401); 
     --footer: hsl(228, 45%, 44%); 
 
-    /* font */
+    /* fonts */
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
      /* Weights: 300, 400, 600 */
@@ -53,14 +53,14 @@ main {
     
 }
 
-.HoverImage {
+.ProductImage {
     position: relative;
     width: 100%;
     border-radius: 0.5rem;
     overflow: hidden;
 }
 
-.NFT-img {
+.NFT-img{
     width: 100%;
     display: block;
 }
@@ -77,7 +77,7 @@ main {
     background-color: var(--hover-img);
 }
 
-.HoverImage:hover .overlay {
+.ProductImage:hover .overlay {
     opacity: 1;
 }
 
@@ -87,14 +87,6 @@ main {
     align-items: center;
     height: 100%;
 }
-
-/* .icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-} */
 
 .title {
     font-size: 1.5rem;
@@ -118,7 +110,7 @@ main {
 .price {
     font-size: 1.1rem;
     font-weight: 400;
-    margin-block: 1.65rem 1.6rem;  /* margines dolny do zmiany, wraz z time left*/ 
+    margin-block: 1.65rem 1.6rem;
     color: var(--hover-color);
 }
 
@@ -135,6 +127,7 @@ main {
 .time-left {
     margin-block: 1.65rem 1.6rem;
     font-size: 1.1rem;
+    font-weight: 400;
     color: var(--paragraph);
 }
 
@@ -165,24 +158,21 @@ main {
 }
 
 /*footer*/
-.attribution { 
+/* .attribution { 
     font-size: 11px; text-align: center;
     margin-top: 2rem;
     color: var(--paragraph);
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); } */
 
 
 @media only screen and (max-width: 500px) {
-
-    body {
-        max-height: 100vh;
-    }
 
     main {
         width: 87%;
         height: auto;
         padding-bottom: 0;
+        margin-top: 2rem;
     }
 
     .descr {
