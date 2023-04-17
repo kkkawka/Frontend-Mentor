@@ -4,7 +4,7 @@
     --component-background: hsl(216, 50%, 16%); 
 
     --shadow-color-box: hsl(216, 68%, 7%); 
-    --borderline: hsla(215, 52%, 70%, 0.122);
+    --border-color-line: hsla(215, 52%, 70%, 0.122);
     --white: hsl(0, 0%, 100%); 
     --paragraph: hsl(215, 51%, 70%);
     --hover-color: hsl(178, 100%, 50%); 
