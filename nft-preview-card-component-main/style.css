@@ -182,7 +182,7 @@ main {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 
     main {
         width: 87%;
