@@ -128,7 +128,7 @@ main {
     float: left;
 }
 
-.time-left h4 {
+.time-left h3 {
     margin-block: 1.55rem 0;
     font-size: 1.1rem;
     font-weight: 400;
@@ -197,7 +197,7 @@ main {
         margin-block: 0.65rem 0;
     }
 
-    .price h4,.time-left h4 {
+    .price h4,.time-left h3 {
         margin-block: 1.1rem 0.9rem;
         font-size: 1rem;
     }
