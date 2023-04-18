@@ -24,11 +24,12 @@ a:visited,:active,:link {
 a {
     transition: 0.2s ease-in-out;
 }
+
 a:hover {
     color: var(--hover-color);
 }
 
-p {
+p,h4 {
     margin: 0;
 }
 
@@ -99,8 +100,8 @@ main {
     font-size: 1.2rem;
     font-weight: 300;
     color: var(--paragraph);
-    margin-block: 1.1rem 0;
-    line-height: 1.7rem;
+    margin-block: 1.05rem 0;
+    line-height: 1.74rem;
 }
 
 .info {
@@ -110,10 +111,10 @@ main {
     border-color: var(--border-color-line);
 }
 
-.price{
+.price h4 {
     font-size: 1.1rem;
     font-weight: 400;
-    margin-block: 1.6rem 1.6rem;
+    margin-block: 1.55rem 1.6rem;
     color: var(--hover-color);
 }
 
@@ -127,8 +128,8 @@ main {
     float: left;
 }
 
-.time-left {
-    margin-block: 1.6rem 0;
+.time-left h4 {
+    margin-block: 1.55rem 0;
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--paragraph);
@@ -139,7 +140,7 @@ main {
     background-image: url(images/icon-clock.svg);
     background-repeat: no-repeat;
     float: left;
-    margin: 0.1rem 0.3rem 0 0;
+    margin: 0.2rem 0.4rem 0 0;
     width: 1.2rem;
     height: 1.2rem;
 }
@@ -147,7 +148,7 @@ main {
 .avatar {
     display: flex;
     align-items: center;
-    font-size: 1.1rem;
+    
     color: var(--paragraph);
     margin-block: 0.3rem 1rem;
 }
@@ -162,17 +163,23 @@ main {
     border-color: var(--white);
 }
 
-.avatar p {
-    margin-block: 0.4rem 0rem;
+.avatar h4 {
+    margin-block: 0.3rem 0rem;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 /*footer*/
-/* .attribution { 
-    font-size: 11px; text-align: center;
-    margin-top: 2rem;
+.attribution { 
+    font-size: 0.9rem; text-align: center;
+    margin-block: 2rem;
     color: var(--paragraph);
 }
-.attribution a { color: hsl(228, 45%, 44%); } */
+.attribution a { color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover { color: rgba(230,25,99,255); 
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -190,16 +197,21 @@ main {
         margin-block: 0.65rem 0;
     }
 
-    .price,.time-left {
+    .price h4,.time-left h4 {
         margin-block: 1.1rem 0.9rem;
         font-size: 1rem;
     }
 
-    .avatar {
+    .avatar h4 {
         font-size: 1.03rem;
     }
 
     .Avatar-Img {
         margin-block: 0.75rem 0.35rem;
+    }
+
+    .attribution {
+        font-size: 3vw;
+        width: 90%;
     }
 }
