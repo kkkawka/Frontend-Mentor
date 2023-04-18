@@ -29,7 +29,7 @@ a:hover {
     color: var(--hover-color);
 }
 
-p,h1,h2 {
+p,h1,h2,h3 {
     margin: 0;
 }
 
@@ -163,7 +163,7 @@ main {
     border-color: var(--white);
 }
 
-.avatar h4 {
+.avatar h1 {
     margin-block: 0.3rem 0rem;
     font-size: 1.1rem;
     font-weight: 300;
@@ -202,7 +202,7 @@ main {
         font-size: 1rem;
     }
 
-    .avatar h4 {
+    .avatar h1 {
         font-size: 1.03rem;
     }
 
