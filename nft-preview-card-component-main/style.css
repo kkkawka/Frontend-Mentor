@@ -18,7 +18,8 @@
 }
 a:visited,:active,:link {
     text-decoration: none;
-    color: rgb(252, 251, 251);
+    color: var(--white);
+  
 }
 
 a {
@@ -178,9 +179,8 @@ main {
 .attribution a { color: hsl(228, 45%, 44%); 
 }
 
-.attribution a:hover { color: rgba(230,25,99,255); 
+.attribution a:hover { color: hsl(338, 80%, 50%); 
 }
-
 
 @media only screen and (max-width: 750px) {
 
