@@ -1,0 +1,167 @@
+:root {
+
+    font-size: 15px;
+    --white: rgb(255, 255, 255);
+    --lightgray: rgb(149, 158, 172); /*active rating component*/
+    --pharagpraph: rgb(124, 135, 152); /*pharagraph*/
+    --element: rgb(23, 30, 40); /*ratting component bg*/
+    --mainbg: rgb(20,21,25); /*main bg color*/
+    --ratingelement: rgb(38,47,56); /*circle element color*/
+    --orange: rgb(251, 116, 19); /*button, ratting element hover*/
+    font-family: 'Overpass', sans-serif; /*400, 700*/
+}
+p,h1,h2,body {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--mainbg);
+    font-family: 'Overpass', sans-serif;
+}
+
+
+main {
+    width: 23.4rem;
+    height: 23.8rem;
+    padding: 2rem;
+    background-color: var(--element);
+    border-radius: 2rem;
+}
+
+.shape-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--ratingelement);
+    height: 3.3rem;
+    width: 3.3rem;
+}
+
+.before-submit h1 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-block:2.1rem 0;
+}
+
+.description {
+    color: var(--pharagpraph);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 0.6rem;
+}
+
+.rating-box {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1.8rem 0;
+}
+
+.shape {
+    font-family: 'Overpass', sans-serif;
+    border-radius: 50%;
+    height: 3.4rem;
+    width: 3.4rem;
+    background-color: var(--ratingelement);
+    color: var(--pharagpraph);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: ease-in .15s;
+}
+
+.shape:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.shape:focus {
+    background-color: var(--lightgray);
+    color: var(--white);
+}
+
+.submit-btn {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 2.2rem;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: ease-in-out .15s;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+    
+}
+
+.after-submit {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.after-submit img {
+    margin-top: 1rem;
+}
+
+.points {
+    color: var(--orange);
+    margin-top: 2rem;
+    border-radius: 2rem;
+    background-color: var(--ratingelement);
+    padding: 0.5rem 1rem 0.4rem 1rem;
+}
+
+.after-submit h2 {
+    color: var(--white);
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-top: 2.4rem;
+}
+
+.thanks {
+    color: var(--pharagpraph);
+    text-align: center;
+    margin-top: 0.55rem;
+    line-height: 1.6rem;
+    margin-inline: 0.3rem;
+}
+
+
+
+/* footer */
+/* footer { 
+    font-size: 11px; text-align: center;
+    margin: 1rem;
+    color: var(--lightgray);
+ }
+footer a {
+    color: hsl(264, 89%, 68%); 
+    text-decoration: none;
+    transition: ease .2s;
+}
+footer a:hover {
+    color: hsl(134, 52%, 46%); 
+    text-decoration: none;
+} */
+
