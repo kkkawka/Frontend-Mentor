@@ -8,7 +8,7 @@
     --mainbg: rgb(20,21,25); /*main bg color*/
     --ratingelement: rgb(38,47,56); /*circle element color*/
     --orange: rgb(251, 116, 19); /*button, ratting element hover*/
-    font-family: 'Overpass', sans-serif; /*400, 700*/
+    --font1: font-family: 'Overpass', sans-serif; /*400, 700*/
 }
 p,h1,h2,body {
     margin: 0;
@@ -26,9 +26,9 @@ body {
 
 
 main {
-    width: 23.4rem;
-    height: 23.8rem;
-    padding: 2rem;
+    width: 23.3rem;
+    min-height: 23.6rem;
+    padding: 2.1rem;
     background-color: var(--element);
     border-radius: 2rem;
 }
@@ -44,23 +44,23 @@ main {
 }
 
 .before-submit h1 {
-    font-size: 1.85rem;
+    font-size: 1.9rem;
     font-weight: 700;
     color: var(--white);
-    margin-block:2.1rem 0;
+    margin-block:2.15rem 0;
 }
 
 .description {
     color: var(--pharagpraph);
     font-size: 1rem;
     line-height: 1.6rem;
-    margin-top: 0.6rem;
+    margin-block: 0.55rem 0;
 }
 
 .rating-box {
     display: flex;
     justify-content: space-between;
-    margin-block: 1.8rem 0;
+    margin-block: 1.75rem 0;
 }
 
 .shape {
@@ -92,7 +92,7 @@ main {
     height: 3rem;
     border: none;
     border-radius: 2rem;
-    margin-top: 2.2rem;
+    margin-block: 2.15rem 0;
     background-color: var(--orange);
     color: var(--white);
     font-family: 'Overpass', sans-serif;
@@ -109,11 +109,11 @@ main {
     cursor: pointer;
 }
 
-.disable-remove {
+/* .disable-remove {
     background-color: var(--lightgray);
     cursor: auto;
     color: var(--white);
-}
+} */
 /* .submit-btn:disabled
  {
     background-color: var(--lightgray);
@@ -121,47 +121,53 @@ main {
     cursor: auto;
 } */
 
+/* second section - after submit */
 .after-submit {
     display: flex ;
     flex-direction: column;
     align-items: center;
+    font-family: var(--font1);
+    width: 100%;
 }
 
 .after-submit img {
-    margin-top: 1rem;
+    margin-top: .9rem;
+    /* height: 7.5rem; */
 }
 
-.points {
+.points-selected {
     color: var(--orange);
-    margin-top: 2rem;
+    margin-top: 2.1rem;
     border-radius: 2rem;
     background-color: var(--ratingelement);
-    padding: 0.5rem 1rem 0.4rem 1rem;
+    padding-block: .5rem .3rem;
+    padding-inline: 1.3rem;
 }
 
 .after-submit h2 {
     color: var(--white);
     font-size: 1.9rem;
     font-weight: 400;
-    margin-top: 2.4rem;
+    margin-top: 2.3rem;
+    font-weight: 700;
+}
+
+.thanks {
+    color: var(--pharagpraph);
+    text-align: center;
+    margin-block: 0.6rem 0;
+    line-height: 1.6rem;
+    margin-inline: 0.3rem;
 }
 
 .display-none {
     display: none;
 }
 
-.thanks {
-    color: var(--pharagpraph);
-    text-align: center;
-    margin-top: 0.55rem;
-    line-height: 1.6rem;
-    margin-inline: 0.3rem;
-}
-
 
 
 /* footer */
-/* footer { 
+footer { 
     font-size: 11px; text-align: center;
     margin: 1rem;
     color: var(--lightgray);
@@ -174,15 +180,16 @@ footer a {
 footer a:hover {
     color: hsl(134, 52%, 46%); 
     text-decoration: none;
-} */
+}
 /* prawie wszystko do zmiany */
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 550px){
+
     main {
-        width: 71%;
-        height: auto;
+        max-width: 76%;
+        min-height: 21.1rem;
         border-radius: 1rem;
         padding: 1.4rem;
-    }
+    } 
 
     .shape-img {
         height: 2.6rem;
@@ -206,7 +213,24 @@ footer a:hover {
     }
 
     .submit-btn {
-        margin-top: 1.7rem;
-        margin-bottom: .8rem;
+        margin-block: 1.7rem 0;
+    }
+    
+    .after-submit img{
+        height: 6.45rem;
+    }
+    .points-selected{
+        font-size: .95rem;
+        padding-inline: .7rem;
+        margin-top: 1.5rem;
+    }
+
+    .after-submit h2 {
+        font-size: 1.5rem;
+        margin-top: 1.9rem
+    }
+
+    .thanks {
+        font-size: .9rem;
     }
 }
