@@ -113,17 +113,13 @@ main {
     cursor: pointer;
 }
 
-/* .disable-remove {
-    background-color: var(--lightgray);
-    cursor: auto;
-    color: var(--white);
-} */
-/* .submit-btn:disabled
+ .submit-btn:disabled
  {
-    background-color: var(--lightgray);
-    color: black;
+    background-color:var(--lightgray);
+    color: var(--white);
     cursor: auto;
-} */
+}
+
 
 /* second section - after submit */
 .after-submit {

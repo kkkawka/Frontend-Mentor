@@ -6,18 +6,24 @@ const points = document.querySelector('#rated-points')
 
 submit.disabled = 'disabled'
 
-// tage value from input
-getValue.forEach((get)=> {
-  get.addEventListener('click', ()=>{
-    let takenInputValue = get.value
-    points.innerHTML = takenInputValue
+getValue.forEach((get) => {
+  get.addEventListener('click', () => {
+    points.innerHTML = get.value
     submit.disabled = false
   })
 })
+
+// take value from input
+// getValue.forEach((get)=> {
+//   get.addEventListener('click', ()=>{
+//     let takenInputValue = get.value
+//     points.innerHTML = takenInputValue
+//     submit.disabled = false
+//   })
+// })
 
 // switch "main" element, by adding or removing class "display-none"
 submit.addEventListener('click', () => {
   hideElement.classList.add('display-none')
   showElement.classList.remove('display-none')
- 
 })
