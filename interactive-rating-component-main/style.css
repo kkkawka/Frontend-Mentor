@@ -8,7 +8,7 @@
     --mainbg: rgb(20,21,25); /*main bg color*/
     --ratingelement: rgb(38,47,56); /*circle element color*/
     --orange: rgb(251, 116, 19); /*button, ratting element hover*/
-    font-family: 'Overpass', sans-serif; /*400, 700*/
+    font-family: 'Overpass', sans-serif;
 }
 
 p,h1,h2,body {
@@ -64,17 +64,18 @@ main {
     margin-block: 1.75rem 0;
 }
 
-.shape {
-    font-family: 'Overpass', sans-serif;
-    border-radius: 50%;
+.shape { 
     height: 3.4rem;
-    width: 3.4rem;
+    width: 3.4rem;    
+    border-radius: 50%;
+    font-family: 'Overpass', sans-serif;
     background-color: var(--ratingelement);
     color: var(--pharagpraph);
-    border: none;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: 700;
+    border: none;
     transition: ease-in .15s;
+    outline: none;
 }
 
 .shape:hover {
@@ -88,9 +89,6 @@ main {
     color: var(--white);
 }
 
-.disabled-btn{
-    background-color: var(--mainbg);
-}
 .submit-btn {
     width: 100%;
     height: 3rem;
@@ -113,9 +111,9 @@ main {
     cursor: pointer;
 }
 
- .submit-btn:disabled
- {
-    background-color:var(--lightgray);
+ .submit-btn:disabled {
+    /* background-color: rgb(184, 128, 68); */
+    background-color: var(--lightgray);
     color: var(--white);
     cursor: auto;
 }
@@ -123,7 +121,7 @@ main {
 
 /* second section - after submit */
 .after-submit {
-    display: flex ;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -177,7 +175,6 @@ footer a {
 }
 footer a:hover {
     color: hsl(134, 52%, 46%); 
-    text-decoration: none;
 }
 
 /* mobile */
