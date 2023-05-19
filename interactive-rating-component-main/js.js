@@ -5,11 +5,11 @@ const getValue = document.querySelectorAll('.shape')
 const points = document.querySelector('#rated-points')
 submit.disabled = 'disabled'
 
-
+// forEach - executes a provided function once for each array element.
 getValue.forEach((get) => {
   get.addEventListener('click', () => {
-    points.innerHTML = get.value
-    submit.disabled = false
+    points.innerHTML = get.value // retrieves value from "input" and places this value in the destination place.
+    submit.disabled = false  // unlocks "submit" button
   })
 })
 
