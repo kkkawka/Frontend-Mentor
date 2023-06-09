@@ -6,28 +6,56 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  
   <title>Frontend Mentor | Stats preview card component</title>
 
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <main>
+    <picture>
+      <source class="img" media="(min-width: 700px)" srcset="images/image-header-desktop.jpg">
+      <img class="img" src="images/image-header-mobile.jpg" alt="obraz">
+      <section class="color-overlay"></section>
+      <!-- rozne zdjecia, dla mobilnej i pulpitu. tak jak w 'product prewiev card'  -->
+    </picture>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <section class="content">
+      <h1>Get <span class="color-span">insights</span> that help your business grow.</h1>
+      <p class="descr">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      
+      <div class="info">
+       <div>
+         <h3>10k+</h3> <p>companies</p>
+       </div>
+       <div>
+         <h3>314</h3> <p>templates</p>
+       </div>
+       <div>
+         <h3>12M+</h3> <p>queries</p>
+         <!-- w html'u zapisac duzymi literami albo zmienic css'em-->
+       </div>
+      </div>
+    </section>
+  </main>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
+  <!-- <footer class="attribution" style="margin-block: 2rem; color: white;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer> -->
 </body>
 </html>
