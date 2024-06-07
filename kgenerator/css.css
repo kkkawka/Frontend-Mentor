@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    /* letter-spacing: .05rem; */
+    
     font-weight: 100;
     text-align: center;
     color: rgb(29, 5, 82);
@@ -37,7 +37,6 @@ main {
 }
 button {
     cursor: pointer;
-    /* background-color: transparent; */
     border: none;
     outline: none;
     border-radius: .2rem;
