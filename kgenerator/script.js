@@ -1,6 +1,16 @@
+// typeof x type of a
+// parseInt() convert string to number without decimal point
+// parseFloat() convert string to number with decimal point
+// x.toString() convert to string
+
+// inNaN(x) checking if someting is a number
+
+// x.push() adding to array
+// x.push([y,z]) adding array inside array
+// x.length length of array
+
 // Korwinowe bingo!
 
-const h1 = document.querySelector('h1')
 const h2 = document.querySelector('h2')
 
 const array = [
@@ -76,7 +86,8 @@ function Korwin() {
   let lol5 = array[4][Math.floor(Math.random() * array[4].length)]
   let lol6 = array[5][Math.floor(Math.random() * array[5].length)]
 
-  let x = lol1 + lol2 + lol3 + lol4 + lol5 + lol6
+  let x = '"' + lol1 + lol2 + lol3 + lol4 + lol5 + lol6 + '"'
 
-  return (h2.innerHTML = x)
+
+  return   h2.innerHTML = x 
 }
