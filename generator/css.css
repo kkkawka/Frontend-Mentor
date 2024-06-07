@@ -1,0 +1,90 @@
+*{
+margin: 0;
+padding: 0;
+/* box-sizing: border-box; */
+
+--blue: rgb(0, 119, 255);
+--green: rgb(107, 188, 94);
+/* font-family: 'East Sea Dokdo', cursive; */
+/* font-family: 'Chelsea Market', cursive; */
+
+}
+
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url(https://rarethief.com/wp-content/uploads/2023/07/sea-of-thieves-the-legend-of-monkey-island-the-journey-to-melee-island.png); */
+    background-color: rgb(0, 27, 44);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+#container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.box {
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid red;
+    margin: 1rem;
+    position: relative;
+}
+
+/* .box1 {
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid rgb(0, 158, 179);
+    margin: 1rem;
+    position: relative;
+} */
+
+.box1 {
+    width: 40rem;
+    border: 1px solid rgb(0, 158, 179);
+    margin-block: .7rem;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1rem 2rem 1rem 1rem;
+    color: rgb(18, 100, 73);
+    text-align: justify;
+    border-radius: .3rem;
+}
+
+
+.close {
+    position: absolute;
+    font-size: 2rem;
+    top: -4px;
+    right: .5rem;
+    color: wheat;
+    cursor: pointer;
+    user-select: none;
+}
+
+.x {
+    position: absolute;
+    right: -1em;
+    top: -1em;
+    cursor: pointer;
+    border-radius: 50%;
+    color: rgb(0, 138, 206);
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+}
